@@ -1,0 +1,29 @@
+*{font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+.navbar {
+      background-color: #fff; 
+}
+
+.container-fluid, .navbar-collapse{
+      display: flex;
+      gap: 15px;
+}
+
+.navbar-brand p {
+      display: inline;
+      font-size: 26px;
+      font-weight: bold;
+}
+
+.navbar-brand i{
+      background: linear-gradient(60deg, green 18%, blue);
+      -webkit-background-clip: text;
+      background-clip: text; 
+      -webkit-text-fill-color: transparent;
+      color: transparent; 
+      display: inline-block; 
+}
+button a{
+      text-decoration: none;
+      color: white;
+}

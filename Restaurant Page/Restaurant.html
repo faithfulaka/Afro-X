@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Afro Xperience</title>
+    <link rel="stylesheet" href="../NavBar-Styling/Nav-Bar.css">
+    <link rel="stylesheet" href="Restaurant.css">
+    <script src="Restaurant.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPXH3P8gj94DJCdQPas4AUBuHghKIgCoo&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid px-5 py-2">
+
+            <a class="navbar-brand me-3" id="navbar-logo" href="../HomePage/Homepage.html">
+                <p>AFR <i class="fa-solid fa-earth-africa"></i> X </p>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarscroll"
+                aria-controls="navbarscroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarscroll">
+
+                <form class="d-flex me-3" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="search" id="restaurant-search"
+                            placeholder="Restaurant Name..." aria-label="Search">
+                            <button class="btn btn-success" type="button" id="search-button">
+                                 <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+                    </div>
+                </form>
+
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Restaurant.html">Restaurants</a></li>
+                            <li><a class="dropdown-item" href="../Reviews Page/Review.html">Reviews</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../AboutUs Page/Aboutus.html">About Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <button class="btn btn-success" type="button"><a href="../JoinUs Page/Join-us.html">Join Us</a></button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section>
+        <div class="left-side">
+
+            <div class="title">
+                <h1>
+                    <span>Best of The Best African</span>
+                    <span> Resturants in Birmingham</span>
+                </h1>
+            </div>
+
+
+            <div class="grid text-center" style="--bs-rows: 10; --bs-columns: 1;">
+                <div class="restaurant1" id="restaurant-1">
+                    <img src="img/af_entrace.jpg" alt="African Village">
+                    <div class="info">
+                        <h4><a href="https://www.african-village.co.uk">African Village</a></h4>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(Reviews)</span>
+                        </div>
+                        <div class="tags">
+                            <span>African</span>
+                        </div>
+                        <div class="status">Open until 23:00</div>
+                        <p class="description">
+                            "So to say how much I liked this African cuisine probably came as quite the shock!"
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="restaurant2" id="restaurant-2">
+                    <img src="img/tb_1.jpg" alt="Turtle Bay">
+                    <div class="info">
+                        <h4><a href="https://turtlebay.co.uk/?utm_source=ExtNet&utm_medium=Yext">Turtle Bay</a></h4>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(Reviews)</span>
+                        </div>
+                        <div class="tags">
+                            <span>Afro-Caribbean</span> <span>Bars</span>
+                        </div>
+                        <div class="status">Open until 23:00</div>
+                        <p class="description">
+                             "The food here is so good! I was pleasantly surprised, having never tried Caribbean food. 
+                             I had the curry goat which is an excellent portion with great flavo"
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="restaurant3" id="restaurant-3">
+                    <img src="img/bne_1.jpeg" alt="Blue Nile Restaurant">
+                    <div class="info">
+                        <h4><a href="https://www.happycow.net/reviews/blue-nile-birmingham-99507">Blue Nile Restaurant</a></h4>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(Reviews)</span>
+                        </div>
+                        <div class="tags">
+                            <span>Ethiopian</span>
+                        </div>
+                        <div class="status">Open until 23:00</div>
+                        <p class="description">
+                            "With the drinks, most people ordered the Ethiopian beer, which I am told was good."
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="restaurant4" id="restaurant-4">
+                    <img src="img/ab_1.jpg" alt="Afro Beat">
+                    <div class="info">
+                        <h4><a href="https://www.tripadvisor.co.uk/Restaurant_Review-g186402-d18793615-Reviews-Afrobeat-Birmingham_West_Midlands_England.html">
+                             Afro Beat</a></h4>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(Reviews)</span>
+                        </div>
+                        <div class="tags">
+                            <span>African</span> <span>Modern European</span> <span>Bars</span>
+                        </div>
+                        <div class="status">Open until 02:00</div>
+                        <p class="description">
+                            "Wow what an incredible experience! The service and ambiance was amazing. My friend and I
+                            ordered the jollof rice with suya on the side, egusi soup and punded yam"
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="restaurant5" id="restaurant-5">
+                    <img src="img/laf_1.jpg" alt="La Fibule">
+                    <div class="info">
+                        <h4> <a href="https://www.la-fibule.co.uk">La Fibule</a></h4>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(Reviews)</span>
+                        </div>
+                        <div class="tags">
+                            <span>Moroccan</span>
+                        </div>
+                        <div class="status">Open until 23:00</div>
+                        <p class="description">
+                             "This North African restaurant is packed full of charm and a great one to visit both with a
+                             group of friends or with your family."
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="restaurant6" id="restaurant-6">
+                    <img src="img/ab_1.jpg" alt="AL-Bader">
+                    <div class="info">
+                        <h4><a href="https://al-bader.co.uk">Al-Bader</a></h4>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(Reviews)</span>
+                        </div>
+                        <div class="tags">
+                            <span>Lebanese</span> <span>Moroccan</span>
+                        </div>
+                        <div class="status">Open until 22:00</div>
+                        <p class="description">
+                             "Al-Bader Resturant is one of my best as they have multi cuisine and they nail them all!
+                             Everything tastes authentic and delicious."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="restaurant7" id="restaurant-7">
+                    <img src="img/ndo_1.jpg" alt="Nando's">
+                    <div class="info">
+                        <h4><a href="https://www.nandos.co.uk/restaurants/birmingham-grand-central">Nando's</a></h4>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(Reviews)</span>
+                        </div>
+                        <div class="tags">
+                            <span>African</span> <span>Portuguese</span>
+                        </div>
+                        <div class="status">Open until 17:00</div>
+                        <p class="description">
+                             "My food was good quality; sometimes the chips can be hit and miss from Nando's, 
+                             but like the chicken, they were cooked and seasoned well."
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <aside class="location">
+
+            <gmp-map center="52.463077545166016,-1.8853354454040527" zoom="12" map-id="DEMO_MAP_ID">
+                <div class="pin1" id="pin-1">
+                    <gmp-advanced-marker position="52.502681732177734,-1.915812373161316"
+                        title="My location"></gmp-advanced-marker>
+                </div>
+
+                <div class="pin2" id="pin-2">
+                    <gmp-advanced-marker position="52.47697448730469,-1.9014897346496582"
+                        title="My location"></gmp-advanced-marker>
+                </div>
+
+                <div class="pin3" id="pin-3">
+                    <gmp-advanced-marker position="52.490230560302734,-1.9089751243591309"
+                        title="My location"></gmp-advanced-marker>
+                </div>
+
+                <div class="pin4" id="pin-4">
+                    <gmp-advanced-marker position="52.49478530883789,-1.891025424003601"
+                        title="My location"></gmp-advanced-marker>
+                </div>
+
+                <div class="pin5" id="pin-5">
+                    <gmp-advanced-marker position="52.448219299316406,-1.8855000734329224"
+                        title="My location"></gmp-advanced-marker>
+                </div>
+
+                <div class="pin6" id="pin-6">
+                    <gmp-advanced-marker position="52.4574089050293,-1.876436471939087"
+                        title="My location"></gmp-advanced-marker>
+                </div>
+
+                <div class="pin7" id="pin-7">
+                    <gmp-advanced-marker position="52.477821350097656,-1.898764967918396"
+                        title="My location"></gmp-advanced-marker>
+                </div>
+            </gmp-map>
+
+        </aside>
+
+    </section>
+</body>
+
+</html>

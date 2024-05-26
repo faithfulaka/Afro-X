@@ -1,0 +1,45 @@
+section{
+     margin-top: 150px;
+     padding: 60px;
+
+}
+
+.title {
+    display: flex;        
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 100%;                                                    
+}
+
+.title h1 {
+    margin: 0;            
+    justify-self: center;
+    text-align: center;   
+    padding-left: 580px;
+}
+
+.title button {
+    justify-self: flex-end; 
+}
+
+
+.card {
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.card .card-up {
+     background-color: #1abc9c;
+     height: 50px;
+     overflow: hidden;
+     border-radius: 4px 4px 0 0;
+} 
+ 
+
+.card-body {
+     background-color: #fff;
+     border: 1px solid #eee;
+     padding: 20px;
+}

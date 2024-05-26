@@ -1,0 +1,37 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box; 
+}
+
+html, body {
+     width: 100%;
+     overflow-x: hidden; 
+}
+
+.section-image {
+     width: 100%;
+     display: block;
+     height: auto;
+}
+
+.section-content {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start; 
+     padding: 20px;
+}
+
+.below-text {
+     padding: 2rem;
+     background-color: rgba(255, 255, 255, 0.8);
+}
+
+section h1{
+     width: 20%;
+     padding-bottom: 20px;
+}
+
+section p{
+     width: 100%; 
+}

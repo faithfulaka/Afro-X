@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Afro Xperience</title>
+    <link rel="stylesheet" href="../NavBar-Styling/Nav-Bar.css">
+    <link rel="stylesheet" href="Review.css">
+    <script src="Review.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPXH3P8gj94DJCdQPas4AUBuHghKIgCoo&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid px-5 py-2">
+            <a class="navbar-brand me-3" id="navbar-logo" href="../HomePage/Homepage.html">
+                <p>AFR <i class="fa-solid fa-earth-africa"></i> X</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarscroll" aria-controls="navbarscroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarscroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../Restaurant Page/Restaurant.html">Restaurants</a></li>
+                            <li><a class="dropdown-item" href="Review.html">Reviews</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../AboutUs Page/Aboutus.html">About Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-success" type="button"><a href="../JoinUs Page/Join-us.html">Join Us</a></button>
+            </div>
+        </div>
+    </nav>
+
+
+    <section>
+
+         <div class="title">
+            <h1>Reviews</h1> 
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#reviewModal">
+                Write your Review
+              </button>
+         </div>
+
+         <!-- Modal -->
+           <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                   <div class="modal-content">
+                       <div class="modal-header">
+                           <h5 class="modal-title" id="reviewModalLabel">Write Your Review</h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                       </div>
+                       <div class="modal-body">
+                           <form id="reviewForm">
+                               <div class="mb-3">
+                                   <label for="restaurantSelect" class="form-label">Choose a restaurant:</label>
+                                   <select class="form-select" id="restaurantSelect">
+                                       <option disabled selected>Select Restaurant</option>
+                                       <option>African Village</option>
+                                       <option>Turtle Bay</option>
+                                       <option>Blue Nile Restaurant</option>
+                                       <option>Afro Beat</option>
+                                       <option>La Fibule</option>
+                                       <option>AL-Bader</option>
+                                       <option>Nando's</option>
+                                   </select>
+                               </div>
+                               <div class="mb-3">
+                                   <label for="reviewText" class="form-label">Your Review:</label>
+                                   <textarea class="form-control" id="reviewText" rows="3"></textarea>
+                               </div>
+                               <button type="button" class="btn btn-success" onclick="postReview()">Post Review</button>
+                           </form>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+         <div class="row text-center d-flex align-items-stretch">
+
+            <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+
+                 <div class="card">
+                     <div class="card-up"></div>
+                     <div class="card-body">
+                     <h4>Akamba</h4>
+                     <hr/>
+                     <p>
+                     "Neque cupiditate assumenda in maiores
+                     repudi mollitia architecto."
+                     </p>
+                     </div> 
+                 </div>
+              
+             </div>
+         
+             
+             <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+
+                 <div class="card">
+                     <div class="card-up"></div>
+                     <div class="card-body">
+                     <h4>Ekhaya Bar & Grill</h4>
+                     <hr/>
+                     <p>
+                     "Neque cupiditate assumenda in maiores
+                     repudi mollitia architecto."
+                     </p>
+                     </div> 
+                 </div>
+               
+             </div>
+
+             
+             <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+
+                <div class="card">
+                    <div class="card-up"></div>
+                    <div class="card-body">
+                    <h4>Safari Bites</h4>
+                    <hr/>
+                    <p>
+                    "Neque cupiditate assumenda in maiores
+                    repudi mollitia architecto."
+                    </p>
+                    </div> 
+                </div>
+              
+             </div>
+
+         </div>
+         
+      </section>
+</body>
+</html>

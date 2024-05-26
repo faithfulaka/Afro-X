@@ -1,0 +1,133 @@
+
+section{      
+    display: flex;
+    overflow-x: hidden;
+}
+.left-side{
+    flex: 1;
+    overflow-y: scroll; 
+    min-width: 65%;
+    min-height: 100%;
+    overflow-x: hidden;
+    padding: 5px;
+    margin-left: 8px;
+    z-index:2;
+
+}
+
+
+.title{
+    font-size: xx-large;
+    padding-top: 80px;
+    padding-bottom: 10px;
+   
+}
+
+
+.title span{
+    display: block; 
+     
+}
+
+.grid{
+     justify-content: center;
+     min-width: 1400px;
+}
+
+.grid .restaurant1, .restaurant2, .restaurant3, .restaurant4, .restaurant5, .restaurant6, .restaurant7{
+     display: flex;
+     text-align: left;
+     max-width: 65%;
+     height: 200px;
+     padding-top: 10px;
+     border-radius: 1px;  
+     box-shadow: 0px 1px 0 0 #ccc; 
+}
+[class^="restaurant"]:hover {
+    box-shadow: 0 0 10px 1px #ccc; 
+    transition: box-shadow 0.3s ease; 
+}
+
+.grid img{
+     width: 180px;
+     height: 180px;
+     border-radius: 4px;
+     align-items: center;
+     padding: top;
+     margin-left: 10px;
+}
+
+.info {
+      display: flex;
+      flex-direction: column; 
+      align-items: left;
+      margin-left: 10px;
+}
+.info h4 {
+      display: flex;
+      flex-direction: column; 
+      align-items: left;
+      padding-left: 2px;
+    
+}
+
+.info h4 a{
+      text-decoration: none;
+      color: black;
+}
+
+.info p{
+      padding: 5px;
+}
+
+
+.rating {
+      color: red;
+      font-size: 18px;
+      margin-bottom: 5px;
+}
+
+.review-count {
+     color: #666;
+     font-size: 16px;
+     margin-bottom: 1px; 
+}
+
+.tags {
+      margin-top: 5px;
+}
+
+.tags span {
+      display: inline-block;
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 2px;
+      font-size: 14px;
+      margin-bottom: 5px; 
+      font-weight: bold;
+      color: gray;
+}
+
+.status {
+      color: #d33;
+      font-weight: bold;
+      margin-top: 2px;
+      margin-bottom: 2px; 
+}
+
+.description {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #555;
+}
+
+
+aside {
+      flex-shrink: 0;    
+      min-width: 35%;    
+      min-height: 100%; 
+      z-index: 1000;
+}
+.green-marker {
+      filter: hue-rotate(90deg);
+}
